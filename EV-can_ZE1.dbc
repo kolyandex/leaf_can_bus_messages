@@ -438,6 +438,10 @@ BO_ 955 x3BB: 8 OBCpd
  SG_ EstimatedChargingTime : 24|8@1+ (1,0) [0|254] "minutes" Vector__XXX
  SG_ RatedBatteryCapacity : 47|16@0+ (0.11,0) [0|100] "kWh" Vector__XXX
 
+BO_ 1516 x5EC: 1 Vector__XXX
+ SG_ _000404 : 4|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _000703 : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+
 
 
 CM_ BU_ VCM "Vehicle Control Module";
