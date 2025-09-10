@@ -177,7 +177,7 @@ BO_ 640 x280: 8 MA
 BO_ 644 x284: 8 ABS
  SG_ Wheel_Speed_FR : 7|16@0+ (0.005,0) [0|327] "km/h" Vector__XXX
  SG_ Wheel_Speed_FL : 23|16@0+ (0.005,0) [0|327] "km/h" Vector__XXX
- SG_ VehicleSpeedFromABS : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VehicleSpeedFromABS : 39|16@0+ (0.011137695312,0) [0|0] "" Vector__XXX
  SG_ DistanceTraveled1 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DistanceTraveled2 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
 
@@ -239,6 +239,10 @@ BO_ 852 x354: 8 ABS
  SG_ Unknown_354_5 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_354_6 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_354_7 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_RedBrakeIcon : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_YellowAbsIcon : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_EscInOp : 39|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ABS_YellowBrakeIconBlinks : 60|2@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 853 x355: 8 MA
  SG_ VehicleSpeedToVCM : 7|16@0+ (0.01,0) [0|0] "" Vector__XXX
@@ -319,6 +323,7 @@ BO_ 1296 x510: 8 VCM
  SG_ ChargeMode : 10|3@0+ (1,0) [0|3] "" Vector__XXX
  SG_ IntegratedPowerConsumptionAc : 15|5@0+ (1,0) [0|0] "" Vector__XXX
  SG_ EcoIndicator : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ GearRedIcon : 41|1@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1354 x54A: 8 Vector__XXX
  SG_ CCStatusPlusUnknown : 0|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -570,7 +575,8 @@ CM_ BO_ 505 "VCM?";
 CM_ BO_ 533 "? Key system ?";
 CM_ BO_ 534 "Related to proximity key? 
 I saw these messages on CAR can when there shouldn't be activity but I was walking near the car.";
-CM_ BO_ 581 "???";
+CM_ BO_ 581 "
+";
 CM_ SG_ 581 Unknown_245_4 "Just ramps and wraps";
 CM_ BO_ 608 "Data for instrumentation cluster";
 CM_ SG_ 608 AvailableMotorPower "";
@@ -588,7 +594,7 @@ CM_ BO_ 644 "ABS Module
 Common with other Nissans such as 370Z";
 CM_ SG_ 644 Wheel_Speed_FR "Front right wheel speed";
 CM_ SG_ 644 Wheel_Speed_FL "Front left wheel speed";
-CM_ SG_ 644 VehicleSpeedFromABS ".0245";
+CM_ SG_ 644 VehicleSpeedFromABS "";
 CM_ BO_ 645 "ABS Module
 
 Common with other Nissans such as 370Z";
@@ -774,6 +780,7 @@ CM_ BO_ 1676 "Wake up message
 68C on EVcan is TCU (Carwings) so it might be a relay from VCM or a log mixup";
 CM_ BO_ 1782 "???";
 VAL_ 372 ShifterPosition 170 "Park/Neutral" 187 "Drive" 153 "Reverse" ;
+VAL_ 852 ABS_YellowBrakeIconBlinks 1 "FAST" 2 "SLOW" ;
 VAL_ 853 ClusterUnitsSelected 0 "Kilometers" 32 "Miles" ;
 VAL_ 853 ClusterOdometerUnits 64 "Kilometers" 96 "Miles" ;
 VAL_ 856 TurnSignalStatus 0 "BothOff" 4 "Left Signal ON" 8 "Right Signal ON" 12 "Both Signals ON (Hazards)" ;
