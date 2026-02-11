@@ -121,11 +121,18 @@ BO_ 476 x1DC: 8 HVBAT
  SG_ LB_PRUN_1DC : 49|2@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 474 x1DA: 8 INVmc
- SG_ MG_EffectiveTorque : 18|11@0+ (0.5,0) [-300|300] "Nm *0.5" Vector__XXX
+ SG_ MG_EffectiveTorque : 18|11@0- (0.5,0) [-300|300] "Nm *0.5" Vector__XXX
  SG_ MG_OutputRevolution : 39|15@0+ (1,0) [-16382|16382] "rpm" Vector__XXX
- SG_ MG_Clock : 48|2@1+ (1,0) [0|0] "PRUN" Vector__XXX
- SG_ CRC_1DA : 56|8@1+ (1,0) [0|0] "CRC" Vector__XXX
- SG_ MG_ErrorCodes : 50|6@1+ (1,0) [0|0] "status" Vector__XXX
+ SG_ MG_Clock : 49|2@0+ (1,0) [0|0] "PRUN" Vector__XXX
+ SG_ CRC_1DA : 63|8@0+ (1,0) [0|0] "CRC" Vector__XXX
+ SG_ MG_ErrorCodes : 55|6@0+ (1,0) [0|0] "status" Vector__XXX
+ SG_ _1DA_Unk_0 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MG_InputVoltage : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MG_MotorPowerLimitRequest : 14|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _1DA_Unk_2 : 23|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _1DA_Unk_3 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _1DA_Unk_4 : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ _1DA_Unk_5 : 19|1@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1465 x5B9: 8 VCM
  SG_ ActiveFuelBars : 3|5@1+ (1,0) [0|12] "-" Vector__XXX

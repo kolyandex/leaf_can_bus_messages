@@ -67,7 +67,7 @@ BO_ 2 x002: 5 STRG
  SG_ Unknown_2_3 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ SteeringSensorHearbeat : 39|8@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 42 x02A: 3 Vector__XXX
+BO_ 42 x02A: 3 AIRBAG
  SG_ Unknown_2A_0 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_2A_1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_2A_2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -129,7 +129,7 @@ BO_ 469 x1D5: 5 VCM
  SG_ Unknown_1D5_3 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_1D5_4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 505 x1f9: 8 Vector__XXX
+BO_ 505 x1f9: 8 VCM
  SG_ Unknown_1F9_0 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_1F9_1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_1F9_2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX

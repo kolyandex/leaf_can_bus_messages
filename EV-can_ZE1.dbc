@@ -94,7 +94,7 @@ BO_ 1468 x5BC: 8 HVBAT
  SG_ CapacityBars m9 : 20|4@1+ (1,0) [0|15] "-" Vector__XXX
 
 BO_ 475 x1DB: 8 HVBAT
- SG_ LB_Current : 7|11@0- (0.5,0) [-400|200] "A" Vector__XXX
+ SG_ LB_Current_40_62 : 7|11@0- (0.5,0) [-400|200] "A" Vector__XXX
  SG_ LB_Relay_Cut_Request : 11|2@1+ (1,0) [0|0] "MODEMASK" Vector__XXX
  SG_ LB_Failsafe_Status : 8|3@1+ (1,0) [0|0] "MODEMASK" Vector__XXX
  SG_ LB_Total_Voltage : 23|10@0+ (0.5,0) [0|450] "V" Vector__XXX
@@ -106,7 +106,7 @@ BO_ 475 x1DB: 8 HVBAT
  SG_ LB_Usable_SOC : 32|7@1+ (1,0) [0|0] "" Vector__XXX
  SG_ LB_PRUN_1DB : 48|2@1+ (1,0) [0|0] "" Vector__XXX
  SG_ CRC_1DB : 56|8@1+ (1,0) [0|0] "CRC" Vector__XXX
- SG_ LB_Current_2 : 47|12@0+ (0.5,0) [-600|400] "" Vector__XXX
+ SG_ LB_Current_62 : 47|12@0+ (0.5,0) [-600|400] "" Vector__XXX
 
 BO_ 1371 x55B: 8 HVBAT
  SG_ LB_SOC : 7|10@0+ (1,0) [0|1000] "%+1" Vector__XXX
@@ -321,11 +321,14 @@ BO_ 264 x108: 3 Vector__XXX
  SG_ Unknown_108_2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 952 x3B8: 5 Vector__XXX
- SG_ Unknown_3b8_0 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Unknown_3b8_1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Unknown_3b8_2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Unknown_3b8_3 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Unknown_3b8_4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CHADEMO_MAX_POWER_40 : 6|9@0+ (0.1,0) [0|50] "kW" Vector__XXX
+ SG_ Unknown_3b8_1 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Unknown_3b8_2 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Unknown_3b8_3 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Unknown_3b8_4 : 10|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ Unknown_3b8_5 : 19|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Unknown_3b8_6 : 31|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ CHADEMO_MAX_POWER_62 : 26|11@0+ (0.1,0) [0|100] "kW" Vector__XXX
 
 BO_ 853 x355: 8 Vector__XXX
  SG_ Unknown_355_4 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -442,6 +445,10 @@ BO_ 1516 x5EC: 1 Vector__XXX
  SG_ _000404 : 4|4@0+ (1,0) [0|0] "" Vector__XXX
  SG_ _000703 : 7|3@0+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 2563506176 x18ccXXXX: 8 Vector__XXX
+ SG_ x18ccXXXX_ID : 4|29@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ x18ccXXXX_DTC : 39|24@0+ (1,0) [0|0] "" Vector__XXX
+
 
 
 CM_ BU_ VCM "Vehicle Control Module";
@@ -537,7 +544,7 @@ CM_ SG_ 1468 CapacityBars "Range 0-15 Below test data by writing to bus and seei
 1 = 1 capacitybars
 0 = 0 capacitybars,";
 CM_ BO_ 475 "Lithium Battery Controller (10ms)";
-CM_ SG_ 475 LB_Current "BatteryCurrentSignal , 2s comp, 1lSB = 0.5A";
+CM_ SG_ 475 LB_Current_40_62 "BatteryCurrentSignal , 2s comp, 1lSB = 0.5A";
 CM_ SG_ 475 LB_Relay_Cut_Request "00 = No-Request 01 = Main Relay OFF Request 10 = Main Relay OFF Request 11 = Main Relay OFF Request";
 CM_ SG_ 475 LB_Failsafe_Status "Request Stop charging. This is the command to request stop charging
 frame.data[1] = (frame.data[1] & 0xE0) | 2;
@@ -556,7 +563,7 @@ CM_ SG_ 475 LB_Voltage_Latch_Flag "0->1:Cell Voltage Latch
 CM_ SG_ 475 LB_Usable_SOC "Contains SOC for dash. LB_USABLE_SOC is a 1% resolution 'proper' SOC calculated by the LBC and used by ABB chargers and the SOC display in the dash menu as well as the 3-light charging indicator on top of the dash [Needs to be copied to this location when doing 40/62kWh swaps into AZE0]";
 CM_ SG_ 475 LB_PRUN_1DB "MPR1DB Detection of frozen data. Message-PRUN-Diag. The transmitting node adds a message counter of 2bits or more to the end of the last data area (or just before the checksum). The value of the counter, which is initially 0, increments by one everytime new data is transmitted, and returned to zero when reaching the max value. The receiving node lets the first message pass without check, but for second next message and following, it check whether the counter number is different from the previous message.";
 CM_ SG_ 475 CRC_1DB "CRC";
-CM_ SG_ 475 LB_Current_2 "Only 62 kWh leaf";
+CM_ SG_ 475 LB_Current_62 "Only 62 kWh leaf";
 CM_ BO_ 1371 "Lithium Battery Controller (100ms)";
 CM_ SG_ 1371 LB_SOC "State of charge. LB_SOC is a 0.1% resolution SOC that is used on startup by Leaf Spy Pro and then ignored in favor of 0x7BB groups, and seemingly used nowhere in the car";
 CM_ SG_ 1371 LB_ALU_ANSWER "HCM:B2h LBC:AAh HCM:5Dh LBC:55h
