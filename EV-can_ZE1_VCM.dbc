@@ -1,0 +1,221 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SHIFT VCM VCM_2
+
+
+BO_ 1290 VCM_50A: 8 VCM
+ SG_ VCM_50A_58_1 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_57_1 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_56_1 : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_55_1 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_52_1 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_51_1 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_50_1 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_49_1 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_48_1 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_29_1 : 37|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_23_1 : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_22_1 : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_21_1 : 45|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_10_1 : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_7_1 : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_6_1 : 62|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_62_2_VcmActivation : 7|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_30_2 : 39|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_24_5 : 36|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_16_2 : 41|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_8_2 : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_40_8_AcPowerLimit : 23|8@0+ (50,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_32_8_RefrPresSnsr : 31|8@0+ (0.02,0) [0|0] "" Vector__XXX
+ SG_ VCM_50A_1_5 : 61|5@0+ (1,-16) [0|0] "" Vector__XXX
+ SG_ VCM_50A_PRUN : 14|2@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1485 VCM_5CD: 5 VCM
+ SG_ VCM_5CD_59_5 : 7|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_56_3 : 2|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_50_6 : 15|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_44_6 : 9|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_40_4 : 19|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_34_6 : 31|6@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5CD_29_5 : 25|5@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 468 VCM_1D4: 8 VCM
+ SG_ VCM_1D4_34_1 : 26|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_33_1 : 25|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_32_1 : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_27_1 : 35|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_26_1_HvStatus : 34|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_25_1 : 33|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_24_1 : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_23_1 : 47|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_22_1_RelayPlusOut : 46|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_19_1 : 43|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_16_1 : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_13_1 : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_11_1 : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_10_1 : 50|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_8_1 : 48|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_56_8 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_48_8 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_20_2 : 45|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_17_2 : 42|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_14_2 : 55|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_36_12_MtrTqRequest : 23|12@0+ (0.25,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_PRUN : 39|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1D4_CS : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 498 VCM_1F2: 8 VCM
+ SG_ VCM_1F2_PRUN : 49|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_CS : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_63_1_TargetCharge_SOC : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_60_1 : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_58_1 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_47_1 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_44_1_Keep_SOC_Request : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_43_1 : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_42_1 : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_14_1 : 54|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_7_1 : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_61_2 : 6|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_45_2_ChgStatReq : 22|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_24_10 : 25|10@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_16_8_VCM_Key : 47|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_10_2 : 51|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_5_2 : 62|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_48_10_CmdChgPower : 1|10@0+ (0.1,-10) [0|0] "" Vector__XXX
+ SG_ VCM_1F2_34_6_DCDC_ReqVolt : 31|6@0+ (0.1,10) [0|0] "" Vector__XXX
+
+BO_ 952 VCM_3B8: 8 VCM
+ SG_ VCM_3B8_53_1 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_52_1 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_51_1 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_54_9_QC_MAX_PWR_40 : 6|9@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_44_7 : 10|7@0+ (0.2,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_40_4 : 19|4@0+ (0.02,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_35_5 : 31|5@0+ (0.02,0) [0|0] "" Vector__XXX
+ SG_ VCM_3B8_24_11_QC_MAX_PWR_62 : 26|11@0+ (0.1,0) [0|0] "" Vector__XXX
+
+BO_ 1209 VCM_2_4B9: 1 VCM_2
+
+BO_ 1291 VCM_50B: 7 VCM
+ SG_ VCM_50B_47_1 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_46_1 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_45_1 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_42_1 : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_36_1 : 28|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_15_1 : 55|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_13_1_BatHtrMailSendOk : 53|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_11_1 : 51|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_40_2_VcmActivation : 17|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_38_2_WkUpSleepCmd : 31|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_16_5 : 44|5@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_56_8 : 7|8@0+ (0.39215687,0) [0|0] "" Vector__XXX
+ SG_ VCM_50B_48_8 : 15|8@0+ (0.39215687,0) [0|0] "" Vector__XXX
+
+BO_ 1516 VCM_5EC: 1 VCM
+ SG_ VCM_5EC_61_3 : 7|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VCM_5EC_57_4 : 4|4@0+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 468 VCM_1D4_26_1_HvStatus "VCM_50A_49_1";
+CM_ SG_ 952 VCM_3B8_53_1 "VCM_510_56_1";
+CM_ SG_ 952 VCM_3B8_44_7 "VCM_510_57_7_IntegrConsMtr";
+CM_ SG_ 952 VCM_3B8_40_4 "VCM_510_44_4_IntegrConsAux";
+CM_ SG_ 952 VCM_3B8_35_5 "VCM_510_51_5_IntegrConsAc";
+CM_ SG_ 1291 VCM_50B_42_1 "VCM_50A_52_1_VCM_551_39_1";
+CM_ SG_ 1291 VCM_50B_40_2_VcmActivation "VCM_50A_62_2_VcmActivation";
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 3600000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 1000000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 100000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","noMsgSendType";
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 3600000;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "GenMsgSendType" "noMsgSendType";
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DatabaseVersion" "1.0";
+BA_ "BusType" "CAN";
+BA_ "DBName" "EV-can_ZE1_VCM";
+BA_ "GenMsgSendType" BO_ 1290 0;
+BA_ "GenMsgCycleTime" BO_ 1290 100;
+BA_ "GenMsgSendType" BO_ 1485 0;
+BA_ "GenMsgCycleTime" BO_ 1485 1000;
+BA_ "GenMsgSendType" BO_ 468 0;
+BA_ "GenMsgCycleTime" BO_ 468 10;
+BA_ "GenMsgSendType" BO_ 498 0;
+BA_ "GenMsgCycleTime" BO_ 498 10;
+BA_ "GenMsgSendType" BO_ 952 0;
+BA_ "GenMsgCycleTime" BO_ 952 100;
+BA_ "GenMsgSendType" BO_ 1209 0;
+BA_ "GenMsgCycleTime" BO_ 1209 100;
+BA_ "GenMsgSendType" BO_ 1291 0;
+BA_ "GenMsgCycleTime" BO_ 1291 100;
+BA_ "GenMsgSendType" BO_ 1516 0;
+BA_ "GenMsgCycleTime" BO_ 1516 500;
+BA_ "ECU" BU_ SHIFT "SHIFT";
+BA_ "ECU" BU_ VCM "VCM";
+BA_ "ECU" BU_ VCM_2 "VCM_2";
+
