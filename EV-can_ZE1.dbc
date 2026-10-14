@@ -258,7 +258,7 @@ BO_ 1438 x59E: 8 HVBAT
  SG_ SoC_related_correction : 63|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ LB_Full_Capacity_for_QC_62 : 21|10@0+ (100,0) [0|62149] "Wh" Vector__XXX
 
-BO_ 1153 x481: 2 Vector__XXX
+BO_ 1153 x481: 2 HVAC
  SG_ Unknown_481_1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Unknown_481_2 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
 
